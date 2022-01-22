@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 const mongoose = require("mongoose");
 const { stringify } = require("nodemon/lib/utils");
 const EmpSchema= mongoose.Schema(
@@ -12,4 +11,4 @@ grade:String
 
 });
 module.exports= mongoose.model("employee",EmpSchema);
->>>>>>> Stashed changes
+
