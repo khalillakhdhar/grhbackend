@@ -21,5 +21,37 @@ employee.save()
     });
   });
 
-  
+
+}
+exports.findEmp=(req,res)=>
+{
+    empSc.find()
+    .then((data)=>{
+        res.send(data);
+    })
+    .catch((err) => {
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while creating the Message.",
+        });
+      });
+    
+
+}
+exports.findId=(req,res)=>
+{
+    empSc.findById(req.params.id)
+    .then((data)=>{
+        if(!data)
+        res.send("Id not found");
+        res.send(data);
+    })
+    .catch((err) => {
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while creating the Message.",
+        });
+      });
+    
+
 }
