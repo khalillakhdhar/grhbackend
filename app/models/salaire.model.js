@@ -1,4 +1,5 @@
 
+
 const mongoose = require("mongoose");
 const SalaireSchema= mongoose.Schema(
 {
@@ -7,4 +8,3 @@ brutte: Number,
 taxes: Number
 
 });
-module.exports= mongoose.model("salare",SalaireSchema);
