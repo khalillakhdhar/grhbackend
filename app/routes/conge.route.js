@@ -1,7 +1,7 @@
 module.exports = (app) => {
-    const Applicationemployee=require("../controllers/conge.controller");
-    app.post("/createemp",Applicationemployee.ajouteremp);
-    app.get("/findemp",Applicationemployee.findEmp);
-    app.get("/findempid/:id",Applicationemployee.findId);
+    const Applicationconge=require("../controllers/conge.controller");
+    app.post("/createcon",Applicationconge.ajoutercong);
+    app.get("/findcong",Applicationconge.findcong);
+    app.get("/findcongid/:id",Applicationconge.findId);
     
     }

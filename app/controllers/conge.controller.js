@@ -1,7 +1,7 @@
-const empSc=require("../models/conge.model");
-exports.ajouteremp=(req,res)=>
+const CongSc=require("../models/conge.model");
+exports.ajoutercong=(req,res)=>
 {
-const conge=new empSc(
+const conge=new CongSc(
     {
         titre: req.body.titre,
         duree: req.body.duree,
@@ -23,9 +23,9 @@ conge.save()
 
 
 }
-exports.findEmp=(req,res)=>
+exports.findcong=(req,res)=>
 {
-    empSc.find()
+    CongSc.find()
     .then((data)=>{
         res.send(data);
     })
@@ -40,7 +40,7 @@ exports.findEmp=(req,res)=>
 }
 exports.findId=(req,res)=>
 {
-    empSc.findById(req.params.id)
+    CongSc.findById(req.params.id)
     .then((data)=>{
         if(!data)
         res.send("Id not found");
