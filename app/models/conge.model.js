@@ -4,7 +4,8 @@ const CongeSchema= mongoose.Schema(
 titre:String,
 duree:String,
 date:String,
+etat:String,
 raison:String,
-justification:String
+justification:String,
 });
 module.exports= mongoose.model("conge",CongeSchema);
