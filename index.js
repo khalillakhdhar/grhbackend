@@ -29,6 +29,7 @@ app.get("/", (req, res) => {
 let PORT = 8080;
 
 require("./app/routes/employee.route")(app);
+require("./app/routes/conge.route")(app);
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
