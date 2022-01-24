@@ -4,6 +4,7 @@ exports.ajouteremp=(req,res)=>
 const employee=new empSc(
     {
         nom: req.body.nom,
+        
         email: req.body.email,
         mdp: req.body.mdp,
         tel: req.body.tel,
