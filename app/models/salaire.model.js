@@ -8,3 +8,4 @@ brutte: Number,
 taxes: Number
 
 });
+module.exports= mongoose.model("salaire",SalaireSchema);
