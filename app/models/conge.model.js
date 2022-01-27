@@ -5,7 +5,7 @@ titre:String,
 duree:String,
 date:String,
 raison:String,
-justification:String,
+justification:String
 
 });
-module.exports= mongoose.model("conge",CongeSchema);
+module.exports= mongoose.model("Appcongee",CongeSchema);
