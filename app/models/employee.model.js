@@ -1,6 +1,5 @@
 
 const mongoose = require("mongoose");
-const { stringify } = require("nodemon/lib/utils");
 const EmpSchema= mongoose.Schema(
 {
 nom:String,
